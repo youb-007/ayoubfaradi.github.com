@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("a.jpg"),no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100VH;
+    color: rgba(255, 255, 255, 0.878);
+    font-family: "Urbanist", sans-serif;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    background-image: url("bg.jpg");
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+header{
+    width: 100%;
+    height: 65px;
+    background-color: rgba(255, 255, 255, 0.150) ;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 25%);
+}
+header .container-fuild{
+    width: 100%;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .navb-logo img{
+    margin-left: -25px;
+    padding: auto;
+    width: 75px;
+    height: 75px ;
+}
+header .navb-items{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    letter-spacing: 3px;
+}
+header .item{
+    text-align: center;
+    margin-inline: 9%;
+    letter-spacing: 4px;
+    color: green;
+    padding: 5px 0;
+    transition: all .1s ease;
+    border-bottom: 0px lid #64d6f4;
+    border-top: 0px solidso #64d6f4 ;
+    cursor: pointer;
+}
+header .item:hover{
+    border-bottom: 3px solid currentColor ;
+    border-top: 3px solid currentColor ;
+}
+h1{
+    text-align: center;
+    background-image: url("bg.jpg");
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    line-height: 1;
+}
+.container{
+    width: 50%;
+    text-align: center;
+    position: relative;
+    top: 200px;
+ 
+}
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+h2{
+    text-align: center;
+    background: linear-gradient(to right, #00ff22, #ffffff);   
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    
+}
