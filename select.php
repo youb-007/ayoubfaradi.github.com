@@ -30,20 +30,40 @@
     </div>
   </div>
 </nav>
+<header>
+    <div id="main_title"><h1>Bienvenue</h1>
+    <p>clients</p>
+</header></div>
+<div class="container">
+    <table class="table table-hover table-bordered table-striped">
+        <tr>
+            <th>ID</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Action</th>
+        </tr>
 
-<div class="content">
-        <h1>Our Product and Customer Focus</h1>
-        <p>We strive to create products that meet the needs of our customers. By putting the client at the center of our design and development process, we ensure that every feature and detail serves a purpose.</p>
-        <p>Our commitment to quality and customer satisfaction drives us to innovate and improve continuously. Whether it's through feedback or direct interaction, we value our customers' insights and use them to refine our offerings.</p>
-        <p>At the heart of our company is a dedication to delivering value and exceeding expectations. We believe that understanding and serving our clients' needs leads to mutual success and lasting partnerships.</p>
-    </div>
+<?php 
+include("connection.php");
+$query = "SELECT * FROM client";
+$result = mysqli_query($connect,$query);
+while($row = mysqli_fetch_array($result)){
+    echo "<tr>
+            <td>$row[id]</td>
+            <td>$row[firstname]</td>
+            <td>$row[lastname]</td>
+            <td>$row[age]</td>
+            <td>$row[email]</td>
+            <td>$row[password]</td>
+            <td><a href='update.php?id=$row[id]' style='text-decoration: none; color:white;  background-color: green; padding:6.5px; border-radius: 5px;'>update</a><a href='delete.php?id=$row[id]' style='text-decoration: none; color:white; background-color: red; margin-left:5px;  padding:6.5px; border-radius: 5px;'>delete</a></td>
+          </tr>";
+}
 
-
-
-
-
-
-
+echo "</table>";?>
+</div>
 
 
 <style>
@@ -54,28 +74,15 @@
     background-attachment: fixed;
     min-height: 100VH;
     color: rgba(255, 255, 255, 0.878);
-    
 }
-.content {
-        font-family: Arial, sans-serif;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(250, 250, 250, 0.4);
-        text-align: center;
-        max-width: 600px;
-        width: 90%;
-        margin-left: 480px;
-        margin-top: 25px;
-        justify-content: center;
-        align-items: center;
-        text-align:center ;
-    }
-    h1 {
-        color: #333;
-        text-shadow: 0 4px 8px rgba(250, 250, 250, 1.7);
-    }
-    p {
-        color:(250, 250, 250, 0.4);
-        line-height: 1.6;
-    }
+
+    i{
+    position: relative;
+    top: 2px;
+    left: -85.5px;
+    color: #fff;
+}
+header{
+    text-align: center;
+}
 </style>

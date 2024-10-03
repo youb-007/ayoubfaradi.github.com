@@ -30,13 +30,53 @@
     </div>
   </div>
 </nav>
+<form method="post">
+  <div class="form-group">
+    <label >Product</label>
+    <input type="text" name="produit" class="form-control" placeholder="Produit">
+  </div>
+  <div class="form-group">
+    <label>Marque</label>
+    <input type="text" class="form-control"  name="marque" placeholder="Marque">
+  </div>
+  <div class="form-group">
+    <label >Prix</label>
+    <input type="text" name="prix" class="form-control" placeholder="Prix">
+  </div>
+  <div class="form-group">
+    <label >Disponible</label>
+    <input type="text" name="disponible" class="form-control" placeholder="Disponible">
+  </div>
+  <br>
+  <button name="p" type="submit" class="btn btn-dark">Ajouter P</button>
+</form>
+<?php
+     include("connection.php");
+    if(isset($_POST['p'])){
+        $produit = $_POST['produit'];
+        $marque = $_POST['marque'];
+        $prix = $_POST['prix'];
+        $disponible = $_POST['disponible'];
+        $query = "INSERT INTO produit (produit,marque,prix,disponible) values ('$produit','$marque','$prix','$disponible')";
+        mysqli_query($connect,$query);
+        header("location:pro.php");
+    }
+    ?>
 
-<div class="content">
-        <h1>Our Product and Customer Focus</h1>
-        <p>We strive to create products that meet the needs of our customers. By putting the client at the center of our design and development process, we ensure that every feature and detail serves a purpose.</p>
-        <p>Our commitment to quality and customer satisfaction drives us to innovate and improve continuously. Whether it's through feedback or direct interaction, we value our customers' insights and use them to refine our offerings.</p>
-        <p>At the heart of our company is a dedication to delivering value and exceeding expectations. We believe that understanding and serving our clients' needs leads to mutual success and lasting partnerships.</p>
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -54,28 +94,16 @@
     background-attachment: fixed;
     min-height: 100VH;
     color: rgba(255, 255, 255, 0.878);
-    
 }
-.content {
-        font-family: Arial, sans-serif;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(250, 250, 250, 0.4);
-        text-align: center;
-        max-width: 600px;
-        width: 90%;
-        margin-left: 480px;
-        margin-top: 25px;
-        justify-content: center;
-        align-items: center;
-        text-align:center ;
-    }
-    h1 {
-        color: #333;
-        text-shadow: 0 4px 8px rgba(250, 250, 250, 1.7);
-    }
-    p {
-        color:(250, 250, 250, 0.4);
-        line-height: 1.6;
-    }
+
+    i{
+    position: relative;
+    top: 2px;
+    left: -85.5px;
+    color: #fff;
+}
+header{
+    text-align: center;
+}
+
 </style>

@@ -1,0 +1,133 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: url("4.jpg"),no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100VH;
+    color: rgba(255, 255, 255, 0.878);
+}
+.all{
+    width: 80%;
+    margin: auto;
+}
+#main_title{
+    text-align: center;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    background: transparent;}
+.l1 input{
+    margin: 15px 2px;
+}*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: url("1.jpg"),no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100VH;
+    color: rgba(255, 255, 255, 0.878);
+}
+.all{
+    width: 80%;
+    margin: auto;
+}
+#main_title{
+    text-align: center;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    background: transparent;}
+.l1 input{
+    margin: 15px 2px;
+}
+.l1{
+    display: flex;
+}
+input{
+    width: 100%;
+    margin: 3px 2px;
+    padding: 55px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: rgba(255, 255, 255, 0.3);
+    color:#fff;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+form i{
+    position: relative;
+    top: -36.5px;
+    left: 7.5px;
+    color: #fff;
+}
+button{
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+button:hover{
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+input{
+    width: 100%;
+    margin: 3px 2px;
+    padding: 55px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: rgba(255, 255, 255, 0.3);
+    color:#fff;
+    padding: 25px;
+    border-radius: 25px;
+}
+.l1 {
+    display: flex;
+}
+form i{
+    position: relative;
+    top: -36.5px;
+    left: 7.5px;
+    color: #fff;
+}
+button{
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+button:hover{
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
